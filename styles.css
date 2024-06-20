@@ -1,14 +1,16 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.6;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -16,33 +18,42 @@ body {
     background: #333;
     color: #fff;
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    display: inline-block;
     font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 .nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    float: right;
+    display: flex;
 }
 
 .nav ul li {
-    display: inline;
     margin-left: 20px;
 }
 
 .nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #ff6b6b;
 }
 
 .hero {
-    background: url('https://img.freepik.com/premium-photo/multi-exposure-abstract-virtual-financial-graph-hologram-stacks-coins-background-forex-investment-concept_258654-5082.jpg?w=1060') ;
-    color: #121212;
+    background: #121212;
+    color: #fff;
     text-align: center;
     padding: 100px 0;
 }
@@ -50,17 +61,22 @@ body {
 .hero h2 {
     font-size: 48px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .hero p {
     font-size: 24px;
     margin-bottom: 40px;
 }
-.about-title {
+
+.section-title {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
+    text-align: center;
+    font-weight: bold;
 }
+
 .highlight {
     color: #007bff;
     font-weight: bold;
@@ -72,6 +88,13 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #ff4747;
 }
 
 .about-text {
@@ -79,25 +102,37 @@ body {
     color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
-    width: 300px;
-    text-align: justify;
 }
+
 .features {
-    background: #f4f4f4;
+    background: url('https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
     padding: 60px 0;
 }
 
-.features h2 {
-    text-align: center;
-    margin-bottom: 40px;
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .feature-item {
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 1.6;
     width: 30%;
-    display: inline-block;
     text-align: center;
-    margin: 0 1.5%;
-    vertical-align: top;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .about {
@@ -105,29 +140,31 @@ body {
     padding: 50px 0;
 }
 
-.about-column {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 30px;
-}
-.feature-image {
-    max-width: 400px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    vertical-align: top;
-}
-
-.about h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about p {
-    width: 60%;
+.about-content {
+    width: 80%;
     margin: 0 auto;
-    text-align: center;
+}
+
+.trusted-brands {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand-logo {
+    max-width: 100px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.brand-logo:hover {
+    transform: scale(1.1);
 }
 
 .contact {
@@ -157,6 +194,29 @@ body {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact form button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.contact form button:hover {
+    background: #0056b3;
 }
 
 .footer {
@@ -166,8 +226,29 @@ body {
     padding: 20px 0;
 }
 
-.brand-logo{
-    width: 100px;
-    height: auto;
-    margin: 10px;
+@media (max-width: 768px) {
+    .feature-item,
+    .about-content,
+    .contact form {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 80%;
+    }
 }
