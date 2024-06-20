@@ -1,91 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fintech Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
+
 <body>
-    <header class="header">
+    <header class="bg-dark text-white">
         <div class="container">
-            <h1 class="logo">FintechCo</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <h1 class="logo">FintechCo</h1>
+                <nav class="nav">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#features" class="nav-link text-white">Features</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section class="hero">
+
+    <section class="hero bg-dark text-white text-center py-5">
         <div class="container">
-            <h2>Your Financial Freedom Starts Here</h2>
-            <p>Innovative solutions for managing your finances efficiently.</p>
-            <a href="#signup" class="btn">Get Started</a>
+            <h2 class="display-4">Your Financial Freedom Starts Here</h2>
+            <p class="lead">Innovative solutions for managing your finances efficiently.</p>
+            <a href="#signup" class="btn btn-danger btn-lg">Get Started</a>
         </div>
     </section>
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Features</h2>
-            <div class="feature-list">
-                <div class="feature-item">
-                    <h3>Secure Transactions</h3>
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D" class="feature-image">
-                    <p>Your security is our top priority with state-of-the-art encryption.</p>
+
+    <section id="features" class="features py-5" style="background: url('https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;">
+        <div class="container text-white">
+            <h2 class="section-title text-center mb-4">Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light mb-4">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Secure Transactions">
+                        <div class="card-body">
+                            <h3 class="card-title">Secure Transactions</h3>
+                            <p class="card-text">Your security is our top priority with state-of-the-art encryption.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <h3>Real-time Analytics</h3>
-                    <img src="https://imgs.search.brave.com/2nJut2SZ3cF4M1hzMDHrMIkqV2wGYWMSuYV7EWju6Hg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vOUZ6UWJN/N3I1YXhXZ01IWi1O/MzJ5aTBHdGxVVlFX/Ym5iVnZaQXJhZVBT/RS9yczpmaXQ6NTAw/OjA6MC9nOmNlL2FI/UjBjSE02THk5cGJX/ZHovTG5ObFlYSmph/QzVpY21GMi9aUzVq/YjIwdlIzWjFiVkJ2/L2QxUk1SRkZsWTFr/elpsWkIvZUVSRWRW/Z3diMDB3VFU1bC9R/bGRzV21OVlV6QlRU/VGMwL2J5OXljenBt/YVhRNk5UWXcvT2pN/eU1Eb3hMMmM2WTJV/di9ZVWhTTUdOSVRU/Wk1lVGx3L1lsZGpk/UzlhYmtwc1dsaEMv/Y0dGNU5XcGlNakIy/TDJOSS9TbXhpVjJ3/eFlsTXhkMkZIL09U/QXZZbms1YVdSWVRu/QmkvYlZaNlkza3hh/QzlpYlVaei9aVmhT/Y0ZrelRYUmFSMFo2/L0wyRkhTblpaV0Vw/clRGaEsvYkdOSE9Y/a3ZaRWRzZFZveC9P/SGhOVkZrMFRWUkZO/UzlNL1ZHYzFUa00x/Y1dOSFkxOWovTW13/MkwxcFVNREpOYWxs/dC9XbGhvTUZCWGNI/Y3ZXbmMuanBlZw" class="feature-image">
-                    <p>Monitor your financial health with real-time data insights.</p>
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light mb-4">
+                        <img src="https://imgs.search.brave.com/2nJut2SZ3cF4M1hzMDHrMIkqV2wGYWMSuYV7EWju6Hg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vOUZ6UWJN/N3I1YXhXZ01IWi1O/MzJ5aTBHdGxVVlFX/Ym5iVnZaQXJhZVBT/RS9yczpmaXQ6NTAw/OjA6MC9nOmNlL2FI/UjBjSE02THk5cGJX/ZHovTG5ObFlYSmph/QzVpY21GMi9aUzVq/YjIwdlIzWjFiVkJ2/L2QxUk1SRkZsWTFr/elpsWkIvZUVSRWRW/Z3diMDB3VFU1bC9R/bGRzV21OVlV6QlRU/VGMwL2J5OXljenBt/YVhRNk5UWXcvT2pN/eU1Eb3hMMmM2WTJV/di9ZVWhTTUdOSVRU/Wk1lVGx3L1lsZGpk/UzlhYmtwc1dsaEMv/Y0dGNU5XcGlNakIy/TDJOSS9TbXhpVjJ3/eFlsTXhkMkZIL09U/QXZZbms1YVdSWVRu/QmkvYlZaNlkza3hh/QzlpYlVaei9aVmhT/Y0ZrelRYUmFSMFo2/L0wyRkhTblpaV0Vw/clRGaEsvYkdOSE9Y/a3ZaRWRzZFZveC9P/SGhOVkZrMFRWUkZO/UzlNL1ZHYzFUa00x/Y1dOSFkxOWovTW13/MkwxcFVNREpOYWxs/dC9XbGhvTUZCWGNI/Y3ZXbmMuanBlZw" class="card-img-top" alt="Real-time Analytics">
+                        <div class="card-body">
+                            <h3 class="card-title">Real-time Analytics</h3>
+                            <p class="card-text">Monitor your financial health with real-time data insights.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <h3>24/7 Support</h3>
-                    <img src="https://img.freepik.com/premium-vector/24-hour-service-iconheadphone-talk-support-phone-consult-customer-problems_68708-3342.jpg" class="feature-image">
-                    <p>We're here for you, anytime you need us.</p>
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light mb-4">
+                        <img src="https://img.freepik.com/premium-vector/24-hour-service-iconheadphone-talk-support-phone-consult-customer-problems_68708-3342.jpg" class="card-img-top" alt="24/7 Support">
+                        <div class="card-body">
+                            <h3 class="card-title">24/7 Support</h3>
+                            <p class="card-text">We're here for you, anytime you need us.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about" class="about">
+
+    <section id="about" class="about py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <p class="about-text">Welcome to <span class="highlight">FintechCo</span>, where financial management meets innovation. Our mission is to make financial services accessible, intuitive, and empowering for everyone. With a dedicated team of experts at the helm, we are constantly pushing the boundaries of what's possible in the world of finance.</p>
-                <p class="about-text">At <span class="highlight">FintechCo</span>, we understand that financial security and growth are essential to achieving your dreams. That's why we offer a range of cutting-edge services designed to simplify and enhance your financial journey. From smart budgeting tools to personalized investment strategies, our solutions are tailored to meet your unique needs.</p>
-                <p class="about-text">We pride ourselves on our commitment to excellence and customer satisfaction. Our team works around the clock to ensure that you have the support and resources you need to thrive. Join us on this exciting journey and discover the future of financial management with <span class="highlight">FintechCo</span>.</p>
+            <h2 class="section-title text-center mb-4">About Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="about-text text-center">Welcome to <span class="highlight">FintechCo</span>, where financial management meets innovation. Our mission is to make financial services accessible, intuitive, and empowering for everyone. With a dedicated team of experts at the helm, we are constantly pushing the boundaries of what's possible in the world of finance.</p>
+                    <p class="about-text text-center">At <span class="highlight">FintechCo</span>, we understand that financial security and growth are essential to achieving your dreams. That's why we offer a range of cutting-edge services designed to simplify and enhance your financial journey. From smart budgeting tools to personalized investment strategies, our solutions are tailored to meet your unique needs.</p>
+                    <p class="about-text text-center">We pride ourselves on our commitment to excellence and customer satisfaction. Our team works around the clock to ensure that you have the support and resources you need to thrive. Join us on this exciting journey and discover the future of financial management with <span class="highlight">FintechCo</span>.</p>
+                </div>
             </div>
         </div>
     </section>
-    <section class="trusted-brands">
+
+    <section class="trusted-brands py-5">
         <div class="container">
-            <h2 class="section-title">Trusted By Top Brands</h2>
-            <div class="brand-logos">
-                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-pay-acceptance-mark-icon.svg" class="brand-logo">
-                <img src="https://pngimg.com/uploads/paypal/paypal_PNG22.png" class="brand-logo">
-                <img src="https://w7.pngwing.com/pngs/173/994/png-transparent-paytm-social-icons-color-icon-thumbnail.png" class="brand-logo">
+            <h2 class="section-title text-center mb-4">Trusted By Top Brands</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-pay-acceptance-mark-icon.svg" class="img-fluid brand-logo">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://pngimg.com/uploads/paypal/paypal_PNG22.png" class="img-fluid brand-logo">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://w7.pngwing.com/pngs/173/994/png-transparent-paytm-social-icons-color-icon-thumbnail.png" class="img-fluid brand-logo">
+                </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="contact">
+
+    <section id="contact" class="contact py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <form action="#">
-                <label for="name" class="about-text">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email" class="about-text">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message" class="about-text">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
+            <h2 class="section-title text-center mb-4">Contact Us</h2>
+            <form action="#" class="w-50 mx-auto">
+                <div class="form-group">
+                    <label for="name" class="about-text">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="about-text">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="about-text">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
             </form>
         </div>
     </section>
-    <footer class="footer">
+
+    <footer class="footer bg-dark text-white text-center py-3">
         <div class="container">
             <p>&copy; 2024 FintechCo. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
